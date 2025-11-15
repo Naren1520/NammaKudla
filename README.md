@@ -3,7 +3,7 @@
 A beautiful and interactive travel guide website for Mangalore (Kudla), Karnataka, India. Discover the coastal beauty, cultural heritage, and culinary delights of this vibrant city.
 
 **Live Repository:** [github.com/Naren1520/NammaKudla](https://github.com/Naren1520/NammaKudla)
-
+**Deployed link:** [vercel.com/Narensj/Namma-Kudla](https://namma-kudla.vercel.app/)
 ## 🌟 Features
 
 ### 📱 Core Sections
