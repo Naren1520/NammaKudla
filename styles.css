@@ -175,7 +175,7 @@ body {
 
 .about-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     margin-top: 2rem;
 }
@@ -189,8 +189,10 @@ body {
 
 .about-stats {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .stat-card {
@@ -200,6 +202,9 @@ body {
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
 }
 
 .stat-card:hover {
@@ -1110,6 +1115,17 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .about-stats {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .stat-card {
+        min-width: 160px;
+        max-width: 200px;
+        padding: 1.5rem 1rem;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1122,6 +1138,20 @@ body {
         width: calc(100% - 40px);
         right: 20px;
         left: 20px;
+        bottom: 100px;
+    }
+
+    .maps-popup {
+        width: calc(100% - 40px);
+        right: 20px;
+        left: 20px;
+        bottom: 100px;
+        height: 400px;
+    }
+
+    .maps-toggle {
+        bottom: 90px;
+        right: 20px;
     }
 
     .newsletter-form {
@@ -1146,5 +1176,39 @@ body {
     .blog-grid,
     .guides-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .stat-card {
+        min-width: unset;
+        max-width: unset;
+        flex: 1;
+    }
+
+    .maps-popup {
+        width: calc(100% - 20px);
+        right: 10px;
+        left: 10px;
+        height: 350px;
+    }
+
+    .maps-toggle {
+        bottom: 80px;
+        right: 10px;
+    }
+
+    .ai-assistant {
+        width: calc(100% - 20px);
+        right: 10px;
+        left: 10px;
+    }
+
+    .ai-toggle {
+        bottom: 80px;
+        right: 80px;
     }
 }
