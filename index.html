@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Kudla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Namma Kudla</h1>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Namma Kudla</h1>
+            <p class="hero-subtitle">Discover the beauty, culture, and heritage of Mangalore</p>
+            <button class="btn btn-primary" onclick="scrollToSection('destinations')">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- About Kudla Section -->
+    <section class="about-kudla">
+        <div class="container">
+            <h2 class="section-title">About Namma Kudla</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Mangalore, affectionately known as "Kudla" in the local Tulu language, is a vibrant coastal city in Karnataka, India. Nestled between the Arabian Sea and the Western Ghats, this port city is renowned for its pristine beaches, rich cultural heritage, and warm hospitality.</p>
+                    <p>From ancient temples and churches to spicy coastal cuisine and thriving trade history, Kudla offers a unique blend of tradition and modernity. Experience the charm of this beautiful city through our curated travel guides and local insights.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>50+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>100+</h3>
+                        <p>Travel Stories</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>20+</h3>
+                        <p>Expert Guides</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="featured-posts">
+        <div class="container">
+            <h2 class="section-title">Featured Stories</h2>
+            <div class="posts-grid" id="featuredPosts"></div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="beaches">Beaches</button>
+                <button class="filter-btn" data-category="temples">Temples</button>
+                <button class="filter-btn" data-category="food">Food</button>
+                <button class="filter-btn" data-category="culture">Culture</button>
+            </div>
+            <div class="blog-grid" id="blogGrid"></div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            <h2 class="section-title">Explore Destinations</h2>
+            <p class="section-subtitle">Click on any location to discover its beauty and history</p>
+            <div class="map-container">
+                <div class="interactive-map" id="interactiveMap"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="guides-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Expert Guides</h2>
+            <div class="guides-grid" id="guidesGrid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Our Mission</h3>
+                    <p>To showcase the beauty and culture of Mangalore to the world, connecting travelers with authentic local experiences.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>To become the go-to platform for anyone looking to explore Mangalore's hidden gems and cultural treasures.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Our Community</h3>
+                    <p>A vibrant community of travelers, bloggers, and local guides passionate about sharing Kudla's stories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>naren@nammakudla.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8296833381</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Mangalore, Karnataka, India</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/naren_s.j._/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/narensj20/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest travel tips and stories from Namma Kudla</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Namma Kudla</h3>
+                    <p>Your gateway to exploring the beautiful coastal city of Mangalore.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#guides">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Namma Kudla. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="aiAssistant">
+        <div class="ai-header">
+            <h3><i class="fas fa-robot"></i> Kudla AI Assistant</h3>
+            <button class="ai-close" id="aiClose">&times;</button>
+        </div>
+        <div class="ai-messages" id="aiMessages">
+            <div class="ai-message bot">
+                <p>Hello! I'm your Kudla travel assistant. How can I help you explore Mangalore today?</p>
+            </div>
+        </div>
+        <div class="ai-input-container">
+            <input type="text" id="aiInput" placeholder="Ask me anything about Mangalore...">
+            <button id="aiSend" title="Send message" aria-label="Send message"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <button class="ai-toggle" id="aiToggle">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <button class="maps-toggle" id="mapsToggle">
+        <i class="fas fa-map-location-dot"></i>
+    </button>
+
+    <!-- Maps Popup -->
+    <div class="maps-popup" id="mapsPopup">
+        <div class="maps-header">
+            <h3><i class="fas fa-map-location-dot"></i> Mangaluru Map</h3>
+            <button class="maps-close" id="mapsClose">&times;</button>
+        </div>
+        <div class="maps-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.59192547366!2d74.75144!3d12.865211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35192d1d59e5d%3A0x6a85b0d85b4c5b0!2sMangaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sin!4v1731681234567" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="modal" id="destinationModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
