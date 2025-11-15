@@ -317,6 +317,6 @@ For questions or support:
 
 ---
 
-**Made with ❤️ for Mangalore**
+**Made for Mangalore**
 
 *Last Updated: November 15, 2024*
